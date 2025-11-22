@@ -143,10 +143,18 @@ export default function FeaturedProducts() {
                 
                 {/* Quick actions */}
                 <div className="absolute top-4 right-4 flex flex-col gap-2 opacity-0 group-hover:opacity-100 transition-opacity">
-                  <button className="w-10 h-10 flex items-center justify-center bg-white rounded-full shadow-lg hover:bg-blue-600 hover:text-white transition-colors cursor-pointer">
+                  <button 
+                    title="Ajouter aux favoris"
+                    aria-label="Ajouter ce produit aux favoris"
+                    className="w-10 h-10 flex items-center justify-center bg-white rounded-full shadow-lg hover:bg-blue-600 hover:text-white transition-colors cursor-pointer"
+                  >
                     <i className="ri-heart-line text-lg"></i>
                   </button>
-                  <button className="w-10 h-10 flex items-center justify-center bg-white rounded-full shadow-lg hover:bg-blue-600 hover:text-white transition-colors cursor-pointer">
+                  <button 
+                    title="Voir détails"
+                    aria-label="Voir les détails de ce produit"
+                    className="w-10 h-10 flex items-center justify-center bg-white rounded-full shadow-lg hover:bg-blue-600 hover:text-white transition-colors cursor-pointer"
+                  >
                     <i className="ri-eye-line text-lg"></i>
                   </button>
                 </div>

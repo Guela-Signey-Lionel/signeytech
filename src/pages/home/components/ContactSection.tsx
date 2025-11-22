@@ -120,16 +120,32 @@ export default function ContactSection() {
               <div className="mt-8 pt-8 border-t border-white/20">
                 <div className="font-semibold mb-4">Suivez-nous</div>
                 <div className="flex gap-3">
-                  <button className="w-12 h-12 flex items-center justify-center bg-white/20 hover:bg-white/30 rounded-xl transition-colors cursor-pointer">
+                  <button 
+                    title="Facebook"
+                    aria-label="Suivez-nous sur Facebook"
+                    className="w-12 h-12 flex items-center justify-center bg-white/20 hover:bg-white/30 rounded-xl transition-colors cursor-pointer"
+                  >
                     <i className="ri-facebook-fill text-2xl"></i>
                   </button>
-                  <button className="w-12 h-12 flex items-center justify-center bg-white/20 hover:bg-white/30 rounded-xl transition-colors cursor-pointer">
+                  <button 
+                    title="Instagram"
+                    aria-label="Suivez-nous sur Instagram"
+                    className="w-12 h-12 flex items-center justify-center bg-white/20 hover:bg-white/30 rounded-xl transition-colors cursor-pointer"
+                  >
                     <i className="ri-instagram-line text-2xl"></i>
                   </button>
-                  <button className="w-12 h-12 flex items-center justify-center bg-white/20 hover:bg-white/30 rounded-xl transition-colors cursor-pointer">
+                  <button 
+                    title="Twitter/X"
+                    aria-label="Suivez-nous sur Twitter"
+                    className="w-12 h-12 flex items-center justify-center bg-white/20 hover:bg-white/30 rounded-xl transition-colors cursor-pointer"
+                  >
                     <i className="ri-twitter-x-line text-2xl"></i>
                   </button>
-                  <button className="w-12 h-12 flex items-center justify-center bg-white/20 hover:bg-white/30 rounded-xl transition-colors cursor-pointer">
+                  <button 
+                    title="WhatsApp"
+                    aria-label="Contactez-nous par WhatsApp"
+                    className="w-12 h-12 flex items-center justify-center bg-white/20 hover:bg-white/30 rounded-xl transition-colors cursor-pointer"
+                  >
                     <i className="ri-whatsapp-line text-2xl"></i>
                   </button>
                 </div>
@@ -142,11 +158,11 @@ export default function ContactSection() {
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d127118.8!2d18.5550!3d4.3947!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x10bbbf7d6f1e1e1f%3A0x1e1e1e1e1e1e1e1e!2sBangui%2C%20Central%20African%20Republic!5e0!3m2!1sen!2s!4v1234567890"
                 width="100%"
                 height="100%"
-                style={{ border: 0 }}
+                style={{ border: "none" }}
                 allowFullScreen
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
-                title="SigneyTech Location"
+                title="SigneyTech Location Map"
               ></iframe>
             </div>
           </div>
@@ -217,7 +233,6 @@ export default function ContactSection() {
                   onChange={handleChange}
                   required
                   className="w-full px-4 py-3 pr-8 border border-gray-300 rounded-xl focus:ring-2 focus:ring-blue-600 focus:border-transparent transition-all text-sm appearance-none bg-white cursor-pointer"
-                  style={{ backgroundImage: "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='%236b7280'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M19 9l-7 7-7-7'%3E%3C/path%3E%3C/svg%3E\")", backgroundRepeat: 'no-repeat', backgroundPosition: 'right 0.75rem center', backgroundSize: '1.5em 1.5em' }}
                 >
                   <option value="">Sélectionnez un sujet</option>
                   <option value="information">Demande d'information</option>

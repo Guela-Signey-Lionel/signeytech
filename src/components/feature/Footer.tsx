@@ -13,7 +13,7 @@ export default function Footer() {
               <div className="w-12 h-12 flex items-center justify-center bg-gradient-to-br from-blue-600 to-blue-700 rounded-xl">
                 <i className="ri-flashlight-fill text-white text-2xl"></i>
               </div>
-              <span className="text-2xl font-bold text-white" style={{ fontFamily: '"Pacifico", serif' }}>
+              <span className="text-2xl font-bold text-white" style={{ fontFamily: "'Pacifico', serif" }}>
                 SigneyTech
               </span>
             </div>
@@ -21,16 +21,32 @@ export default function Footer() {
               Votre partenaire de confiance pour tous vos besoins en électronique et électroménager à Bangui depuis 2024.
             </p>
             <div className="flex gap-3">
-              <button className="w-10 h-10 flex items-center justify-center bg-gray-800 hover:bg-blue-600 rounded-lg transition-colors cursor-pointer">
+              <button 
+                title="Facebook"
+                aria-label="Suivez-nous sur Facebook"
+                className="w-10 h-10 flex items-center justify-center bg-gray-800 hover:bg-blue-600 rounded-lg transition-colors cursor-pointer"
+              >
                 <i className="ri-facebook-fill text-xl"></i>
               </button>
-              <button className="w-10 h-10 flex items-center justify-center bg-gray-800 hover:bg-blue-600 rounded-lg transition-colors cursor-pointer">
+              <button 
+                title="Instagram"
+                aria-label="Suivez-nous sur Instagram"
+                className="w-10 h-10 flex items-center justify-center bg-gray-800 hover:bg-blue-600 rounded-lg transition-colors cursor-pointer"
+              >
                 <i className="ri-instagram-line text-xl"></i>
               </button>
-              <button className="w-10 h-10 flex items-center justify-center bg-gray-800 hover:bg-blue-600 rounded-lg transition-colors cursor-pointer">
+              <button 
+                title="Twitter/X"
+                aria-label="Suivez-nous sur Twitter"
+                className="w-10 h-10 flex items-center justify-center bg-gray-800 hover:bg-blue-600 rounded-lg transition-colors cursor-pointer"
+              >
                 <i className="ri-twitter-x-line text-xl"></i>
               </button>
-              <button className="w-10 h-10 flex items-center justify-center bg-gray-800 hover:bg-blue-600 rounded-lg transition-colors cursor-pointer">
+              <button 
+                title="WhatsApp"
+                aria-label="Contactez-nous par WhatsApp"
+                className="w-10 h-10 flex items-center justify-center bg-gray-800 hover:bg-blue-600 rounded-lg transition-colors cursor-pointer"
+              >
                 <i className="ri-whatsapp-line text-xl"></i>
               </button>
             </div>

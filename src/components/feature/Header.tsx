@@ -30,7 +30,7 @@ export default function Header() {
             <div className="w-12 h-12 flex items-center justify-center bg-gradient-to-br from-blue-600 to-blue-700 rounded-xl shadow-lg group-hover:shadow-xl transition-shadow">
               <i className="ri-flashlight-fill text-white text-2xl"></i>
             </div>
-            <span className="text-2xl font-bold bg-gradient-to-r from-blue-600 to-blue-800 bg-clip-text text-transparent" style={{ fontFamily: '"Pacifico", serif' }}>
+            <span className="text-2xl font-bold bg-gradient-to-r from-blue-600 to-blue-800 bg-clip-text text-transparent" style={{ fontFamily: "'Pacifico', serif" }}>
               SigneyTech
             </span>
           </Link>
@@ -102,10 +102,18 @@ export default function Header() {
 
           {/* Actions Desktop */}
           <div className="hidden lg:flex items-center gap-4">
-            <button className="w-10 h-10 flex items-center justify-center text-gray-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors cursor-pointer">
+            <button 
+              title="Rechercher"
+              aria-label="Rechercher des produits"
+              className="w-10 h-10 flex items-center justify-center text-gray-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors cursor-pointer"
+            >
               <i className="ri-search-line text-xl"></i>
             </button>
-            <button className="w-10 h-10 flex items-center justify-center text-gray-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors cursor-pointer relative">
+            <button 
+              title="Panier"
+              aria-label="Voir le panier (3 articles)"
+              className="w-10 h-10 flex items-center justify-center text-gray-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors cursor-pointer relative"
+            >
               <i className="ri-shopping-cart-line text-xl"></i>
               <span className="absolute -top-1 -right-1 w-5 h-5 flex items-center justify-center bg-red-500 text-white text-xs font-bold rounded-full">
                 3
@@ -120,6 +128,8 @@ export default function Header() {
           {/* Menu Mobile Button */}
           <button
             onClick={() => setIsMenuOpen(!isMenuOpen)}
+            title={isMenuOpen ? "Fermer le menu" : "Ouvrir le menu"}
+            aria-label={isMenuOpen ? "Fermer le menu de navigation" : "Ouvrir le menu de navigation"}
             className="lg:hidden w-10 h-10 flex items-center justify-center text-gray-700 hover:bg-gray-100 rounded-lg transition-colors cursor-pointer"
           >
             <i className={`${isMenuOpen ? 'ri-close-line' : 'ri-menu-line'} text-2xl`}></i>
