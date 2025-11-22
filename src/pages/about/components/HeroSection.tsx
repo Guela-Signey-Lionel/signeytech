@@ -3,6 +3,7 @@ export default function HeroSection() {
   return (
     <section 
       className="relative py-32 bg-cover bg-center bg-no-repeat"
+      // eslint-disable-next-line react/no-unknown-property
       style={{
         backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('https://readdy.ai/api/search-image?query=Modern%20electronics%20store%20interior%20with%20professional%20team%20members%20working%20together%2C%20bright%20lighting%2C%20clean%20organized%20shelves%20with%20computers%20and%20appliances%2C%20contemporary%20retail%20environment%2C%20professional%20atmosphere%2C%20high-tech%20displays%2C%20welcoming%20customer%20service%20area&width=1920&height=800&seq=about-hero-bg&orientation=landscape')`
       }}

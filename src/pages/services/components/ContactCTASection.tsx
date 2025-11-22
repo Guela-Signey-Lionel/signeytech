@@ -3,6 +3,7 @@ export default function ContactCTASection() {
   return (
     <section 
       className="py-20 bg-cover bg-center relative"
+      // eslint-disable-next-line react/no-unknown-property
       style={{
         backgroundImage: `linear-gradient(rgba(59, 130, 246, 0.9), rgba(37, 99, 235, 0.9)), url('https://readdy.ai/api/search-image?query=Modern%20technology%20service%20center%20with%20professional%20team%20working%20on%20computers%20and%20electronic%20devices%2C%20clean%20organized%20workspace%2C%20customer%20service%20environment&width=1200&height=400&seq=contact-cta&orientation=landscape')`
       }}

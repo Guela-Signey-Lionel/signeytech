@@ -30,7 +30,7 @@ export default function Header() {
             <div className="w-12 h-12 flex items-center justify-center bg-gradient-to-br from-blue-600 to-blue-700 rounded-xl shadow-lg group-hover:shadow-xl transition-shadow">
               <i className="ri-flashlight-fill text-white text-2xl"></i>
             </div>
-            <span className="text-2xl font-bold bg-gradient-to-r from-blue-600 to-blue-800 bg-clip-text text-transparent" style={{ fontFamily: "'Pacifico', serif" }}>
+            <span className="text-2xl font-bold bg-gradient-to-r from-blue-600 to-blue-800 bg-clip-text text-transparent font-pacifico">
               SigneyTech
             </span>
           </Link>

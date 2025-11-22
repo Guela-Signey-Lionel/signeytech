@@ -12,6 +12,7 @@ export default function HeroSection() {
     <section 
       id="accueil" 
       className="relative min-h-screen flex items-center bg-cover bg-center bg-no-repeat"
+      // eslint-disable-next-line react/no-unknown-property
       style={{
         backgroundImage: `linear-gradient(135deg, rgba(37, 99, 235, 0.95) 0%, rgba(37, 99, 235, 0.85) 50%, rgba(59, 130, 246, 0.7) 100%), url('https://readdy.ai/api/search-image?query=Modern%20premium%20electronics%20store%20showroom%20with%20sleek%20displays%20of%20laptops%20smartphones%20tablets%20and%20home%20appliances%2C%20professional%20LED%20lighting%2C%20minimalist%20white%20and%20blue%20interior%20design%2C%20glass%20shelves%2C%20contemporary%20retail%20space%2C%20bright%20clean%20atmosphere%2C%20high-end%20technology%20showcase%2C%20spacious%20layout%20with%20geometric%20patterns&width=1920&height=1080&seq=hero-electronics-premium&orientation=landscape')`
       }}

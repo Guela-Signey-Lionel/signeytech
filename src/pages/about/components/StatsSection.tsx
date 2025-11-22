@@ -26,6 +26,7 @@ export default function StatsSection() {
   return (
     <section 
       className="py-20 bg-cover bg-center bg-no-repeat relative"
+      // eslint-disable-next-line react/no-unknown-property
       style={{
         backgroundImage: `linear-gradient(rgba(59, 130, 246, 0.9), rgba(59, 130, 246, 0.9)), url('https://readdy.ai/api/search-image?query=Modern%20electronics%20store%20with%20happy%20customers%20shopping%2C%20diverse%20African%20families%20choosing%20computers%20and%20appliances%2C%20bright%20retail%20environment%2C%20successful%20business%20atmosphere%2C%20customer%20satisfaction%2C%20technology%20shopping%20experience&width=1920&height=600&seq=about-stats-bg&orientation=landscape')`
       }}

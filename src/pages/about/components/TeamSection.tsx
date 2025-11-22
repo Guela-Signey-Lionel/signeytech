@@ -85,12 +85,16 @@ export default function TeamSection() {
                 <div className="flex space-x-3">
                   <a 
                     href={member.social.linkedin}
+                    title="Profil LinkedIn"
+                    aria-label={`Voir le profil LinkedIn de ${member.name}`}
                     className="w-10 h-10 bg-blue-600 rounded-full flex items-center justify-center text-white hover:bg-blue-700 transition-colors cursor-pointer"
                   >
                     <i className="ri-linkedin-fill"></i>
                   </a>
                   <a 
                     href={`mailto:${member.social.email}`}
+                    title="Envoyer un email"
+                    aria-label={`Envoyer un email à ${member.name}`}
                     className="w-10 h-10 bg-gray-600 rounded-full flex items-center justify-center text-white hover:bg-gray-700 transition-colors cursor-pointer"
                   >
                     <i className="ri-mail-line"></i>

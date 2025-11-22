@@ -3,6 +3,7 @@ export default function HeroSection() {
   return (
     <section 
       className="relative min-h-[600px] flex items-center justify-center bg-cover bg-center"
+      // eslint-disable-next-line react/no-unknown-property
       style={{
         backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://readdy.ai/api/search-image?query=Professional%20technology%20services%20team%20working%20with%20computers%20and%20electronic%20devices%20in%20modern%20office%20environment%2C%20clean%20white%20background%2C%20professional%20lighting%2C%20high-tech%20atmosphere%2C%20modern%20workspace%20with%20multiple%20screens%20and%20equipment&width=1200&height=600&seq=services-hero&orientation=landscape')`
       }}

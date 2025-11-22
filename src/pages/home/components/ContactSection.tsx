@@ -158,7 +158,7 @@ export default function ContactSection() {
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d127118.8!2d18.5550!3d4.3947!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x10bbbf7d6f1e1e1f%3A0x1e1e1e1e1e1e1e1e!2sBangui%2C%20Central%20African%20Republic!5e0!3m2!1sen!2s!4v1234567890"
                 width="100%"
                 height="100%"
-                style={{ border: "none" }}
+                className="block"
                 allowFullScreen
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"

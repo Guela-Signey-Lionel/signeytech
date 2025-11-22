@@ -13,7 +13,7 @@ export default function Footer() {
               <div className="w-12 h-12 flex items-center justify-center bg-gradient-to-br from-blue-600 to-blue-700 rounded-xl">
                 <i className="ri-flashlight-fill text-white text-2xl"></i>
               </div>
-              <span className="text-2xl font-bold text-white" style={{ fontFamily: "'Pacifico', serif" }}>
+              <span className="text-2xl font-bold text-white font-pacifico">
                 SigneyTech
               </span>
             </div>

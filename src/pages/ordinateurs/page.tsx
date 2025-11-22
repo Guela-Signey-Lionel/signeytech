@@ -265,6 +265,8 @@ export default function OrdinateursPage() {
             <div className="flex items-center space-x-4">
               <span className="text-gray-600 text-sm">Trier par:</span>
               <select
+                title="Trier les produits"
+                aria-label="Trier les ordinateurs par popularité, prix ou notes"
                 value={sortBy}
                 onChange={(e) => setSortBy(e.target.value)}
                 className="px-3 py-2 pr-8 border border-gray-300 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
@@ -315,7 +317,11 @@ export default function OrdinateursPage() {
                     </div>
                   )}
                   <div className="absolute top-3 right-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                    <button className="w-8 h-8 flex items-center justify-center bg-white rounded-full shadow-md hover:bg-gray-50 cursor-pointer">
+                    <button 
+                      title="Ajouter aux favoris"
+                      aria-label="Ajouter ce produit aux favoris"
+                      className="w-8 h-8 flex items-center justify-center bg-white rounded-full shadow-md hover:bg-gray-50 cursor-pointer"
+                    >
                       <i className="ri-heart-line text-gray-600"></i>
                     </button>
                   </div>
