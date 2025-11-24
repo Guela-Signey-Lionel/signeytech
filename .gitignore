@@ -3,7 +3,7 @@ node_modules/
 
 # Vite output
 out/
-dist/
+# dist/  -- temporarily commented to deploy to gh-pages
 
 # Local env files
 .env
