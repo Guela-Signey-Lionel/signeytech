@@ -1,4 +1,5 @@
 import { BrowserRouter } from 'react-router-dom'
+import { Suspense } from 'react'
 import { AppRoutes } from './router'
 
 // Provide a safe fallback for __BASE_PATH__ so the app can be opened
@@ -10,7 +11,9 @@ function App() {
 
   return (
     <BrowserRouter basename={base}>
-      <AppRoutes />
+      <Suspense fallback={<div className="min-h-screen flex items-center justify-center bg-gray-50"><p className="text-gray-600 text-lg">Chargement...</p></div>}>
+        <AppRoutes />
+      </Suspense>
     </BrowserRouter>
   )
 }
