@@ -3,7 +3,9 @@ import react from '@vitejs/plugin-react-swc'
 import { resolve } from 'node:path'
 import AutoImport from 'unplugin-auto-import/vite'
 
-const base = process.env.BASE_PATH || '/'
+// set default Vite base to repository path for GitHub Pages when building for production
+const defaultBase = process.env.NODE_ENV === 'production' ? '/signeytech/' : '/'
+const base = process.env.BASE_PATH || defaultBase
 const isPreview = process.env.IS_PREVIEW  ? true : false;
 // https://vite.dev/config/
 export default defineConfig({

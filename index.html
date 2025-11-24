@@ -21,17 +21,26 @@
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
     
-    <!-- Readdy Agent Widget -->
-    <script 
-      src="https://readdy.ai/api/public/assistant/widget?projectId=618f74f1-d313-483a-8408-18d96d7b688b"
-      mode="hybrid"
-      voice-show-transcript="true"
-      theme="light"
-      size="compact"
-      accent-color="#14B8A6"
-      button-base-color="#000000"
-      button-accent-color="#FFFFFF"
-      defer
-    ></script>
+    <!-- Readdy Agent Widget (only load in local dev to avoid CDN MIME issues on GH pages) -->
+    <script>
+      (function () {
+        // Only inject the third-party widget while developing locally.
+        // Some CDNs may respond with a non-JS MIME type which can block the browser
+        // when the site is served from GitHub Pages. Avoid loading it in production.
+        if (location.hostname === 'localhost' || location.hostname === '127.0.0.1') {
+          var s = document.createElement('script')
+          s.src = 'https://readdy.ai/api/public/assistant/widget?projectId=618f74f1-d313-483a-8408-18d96d7b688b'
+          s.setAttribute('mode', 'hybrid')
+          s.setAttribute('voice-show-transcript', 'true')
+          s.setAttribute('theme', 'light')
+          s.setAttribute('size', 'compact')
+          s.setAttribute('accent-color', '#14B8A6')
+          s.setAttribute('button-base-color', '#000000')
+          s.setAttribute('button-accent-color', '#FFFFFF')
+          s.defer = true
+          document.body.appendChild(s)
+        }
+      })();
+    </script>
   </body>
 </html>
