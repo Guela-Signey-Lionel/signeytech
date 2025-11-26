@@ -3,9 +3,14 @@ import react from '@vitejs/plugin-react-swc'
 import { resolve } from 'node:path'
 import AutoImport from 'unplugin-auto-import/vite'
 
-// set default Vite base to repository path for GitHub Pages when building for production
-const defaultBase = process.env.NODE_ENV === 'production' ? '/signeytech/' : '/'
-const base = process.env.BASE_PATH || defaultBase
+// Use a relative base for production so assets load correctly on GitHub Pages
+// Using './' ensures the built asset URLs are relative to index.html and work
+// regardless of how GitHub Pages serves the repository (project pages or root).
+// Consider both NODE_ENV and Vite's MODE environment variable — some call sites set MODE.
+const isProd = process.env.NODE_ENV === 'production' || process.env.MODE === 'production'
+// force production builds to use a relative base so assets are referenced
+// as './assets/...' in `dist/index.html` which works on GitHub Pages.
+const base = isProd ? './' : (process.env.BASE_PATH || '/')
 const isPreview = process.env.IS_PREVIEW  ? true : false;
 // https://vite.dev/config/
 export default defineConfig({
