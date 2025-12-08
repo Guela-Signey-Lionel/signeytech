@@ -1,0 +1,2 @@
+const s="/assets/MacBook%20Pro%20M3-D0iFGlMV.jpg",a="/assets/iPhone%2015%20Pro%20Max-DiCsvf0d.jpg",o="/assets/Sony%20Headphones-BtOmP3kn.jpg",t="/assets/Dell_XPS_15_-tgu4DQW-.png",e="/assets/LG%204K%20TV%2065-RBT8QASG.webp",n="/assets/Laptop%20ASUS%20ROG-BQDwXqAu.jpg",p="/assets/PlayStation%205-DHhGeiTp.jpg",c="/assets/Samsung_Galaxy_s24-BFb875xQ.jpeg",g="/assets/iPad%20Pro%2012.9-BpWKP3IK.jpg";export{g as a,o as b,n as c,t as d,a as i,e as l,s as m,p,c as s};
+//# sourceMappingURL=iPad Pro 12.9-CrsVyqRn.js.map
