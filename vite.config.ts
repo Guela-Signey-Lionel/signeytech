@@ -3,10 +3,11 @@ import react from '@vitejs/plugin-react-swc'
 import { resolve } from 'node:path'
 import AutoImport from 'unplugin-auto-import/vite'
 
-const base = process.env.BASE_PATH || '/'
+const base = process.env.BASE_PATH || '/signeytech/'
 const isPreview = process.env.IS_PREVIEW  ? true : false;
 // https://vite.dev/config/
 export default defineConfig({
+  base: '/signeytech/',
   define: {
    __BASE_PATH__: JSON.stringify(base),
    __IS_PREVIEW__: JSON.stringify(isPreview)
