@@ -5,14 +5,18 @@ import AutoImport from 'unplugin-auto-import/vite'
 
 const base = process.env.BASE_PATH || '/signeytech/'
 const isPreview = process.env.IS_PREVIEW  ? true : false;
+
 // https://vite.dev/config/
 export default defineConfig({
-  base: '/signeytech/',
+  // SUPPRIMEZ CETTE LIGNE : base: '/signeytech/',
+  
   define: {
-   __BASE_PATH__: JSON.stringify(base),
-   __IS_PREVIEW__: JSON.stringify(isPreview)
+    __BASE_PATH__: JSON.stringify(base),
+    __IS_PREVIEW__: JSON.stringify(isPreview)
   },
-  plugins: [react(),
+  
+  plugins: [
+    react(),
     AutoImport({
       imports: [
         {
@@ -66,16 +70,20 @@ export default defineConfig({
       dts: true,
     }),
   ],
-  base,
+  
+  base,  // ← GARDER CETTE LIGNE SEULEMENT
+  
   build: {
     sourcemap: true,
     outDir: 'dist',
   },
+  
   resolve: {
     alias: {
       '@': resolve(__dirname, './src')
     }
   },
+  
   server: {
     port: 3000,
     host: '0.0.0.0',
